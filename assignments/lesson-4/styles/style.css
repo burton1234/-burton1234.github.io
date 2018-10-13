@@ -9,7 +9,7 @@ body {
     font-style: italic;
     color: #373fff;
   }
-  img {
-      max-width: 100%;
-      height: auto;
+  body {
+      background-image: ("assignments\lesson-4\images\weatherstorm.jpg");
+      
   }
