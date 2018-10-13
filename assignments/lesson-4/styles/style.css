@@ -1,20 +1,18 @@
-/* CSS files add styling rules to your content */
-header{
 
-}
 body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
+    background-image:url("assignments/lesson-4/images/weatherstorm.jpg");
+    height: 100%;
+    width: 25%;
   }
   
   h1 {
     font-style: italic;
     color: #373fff;
   }
-  body {
-    background-image: url("assignments/lesson-4/images/weatherstorm.jpg");
-    height: 50%;
-    width: 25%;
-}
+
+   
+ 
       
   
