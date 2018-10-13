@@ -1,5 +1,7 @@
 /* CSS files add styling rules to your content */
+header{
 
+}
 body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
@@ -10,6 +12,9 @@ body {
     color: #373fff;
   }
   body {
-      background-image: ("assignments/lesson-4/images/weatherstorm.jpg");
+    background-image: url("assignments/lesson-4/images/weatherstorm.jpg");
+    height: 50%;
+    width: 25%;
+}
       
-  }
+  
