@@ -1,10 +1,15 @@
 
+header img {
+    background-image:
+    height: 50%;
+    width: 125%;
+
 body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
-    background-image:url("assignments/lesson-4/images/weatherstorm.jpg");
+    
     height: 100%;
-    width: 25%;
+    width: 75%;
   }
   
   h1 {
