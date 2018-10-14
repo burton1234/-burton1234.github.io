@@ -1,23 +1,41 @@
-
+header {
+    position: fixed;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
 header img {
-    background-image:
-    height: 50%;
-    width: 125%;
-
+    padding: 10%;
+    
+    border-image:  url("assignments/lesson-4/images/weatherstorm.jpg");
+    width: auto;
+    
+ }
 body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
-    
     height: 100%;
     width: 75%;
   }
   
   h1 {
+    text-align: center; 
     font-style: italic;
-    color: #373fff;
-  }
+    color: white;
+   }
 
    
- 
+ footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
+       
+
+ }
       
   
