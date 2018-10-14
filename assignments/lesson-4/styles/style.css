@@ -2,41 +2,49 @@ body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
     height: 100%;
-    width: 75%;
+    
   }
 
 header {
     background-color: black;
     text-align: center;
-    
     height: 150px;
     width: 100%;
-    
-}
+    }
 
 header > img {
  width: 100px;
+ padding-right: 100px;
+ padding-bottom: 20px;
  height: auto;
- vertical-align: left;
+ 
  }
 
  .headertext {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    font-size: 25px;
-    vertical-align: left;
+    font-size: 20px;
+    position: relative;
     color: white;
-    display: inline-block; 
+    display: inline-block;
+     
    
     
    }
  .headertext h1 {
-    font-size: 35px;
+    position: relative; 
+    font-size: 50px;
+    
  }
  .currentconditions {
     display: inline-block;
+    padding-inline-start: 70px;
     width: 100px;
     height: auto;
     vertical-align: right;
+    
+   
+
+}
+    
 }   
  footer {
     position: fixed;
