@@ -8,7 +8,8 @@ body {
 header {
     background-color: black;
     text-align: center;
-    height: 100px;
+    
+    height: 150px;
     width: 100%;
     
 }
@@ -17,21 +18,25 @@ header > img {
  width: 100px;
  height: auto;
  vertical-align: left;
- 
-}
-
+ }
 
  .headertext {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    display: inline-block; 
+    font-size: 25px;
+    vertical-align: left;
     color: white;
-    vertical-align: middle;
+    display: inline-block; 
+   
+    
    }
-.headertext h1 {
-    font-size: 3rem;
-}
-.currentconditions {
+ .headertext h1 {
+    font-size: 35px;
+ }
+ .currentconditions {
     display: inline-block;
+    width: 100px;
+    height: auto;
+    vertical-align: right;
 }   
  footer {
     position: fixed;
