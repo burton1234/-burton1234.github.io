@@ -1,0 +1,60 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    height: 100%;
+    
+  }
+
+header {
+    background-color: black;
+    position: fixed;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    }
+
+header > img {
+ width: 100px;
+ padding-right: 80px;
+ padding-bottom: 20px;
+ height: auto;
+ 
+ }
+
+ .headertext {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    display: inline-block;
+     
+   
+    
+   }
+ .headertext h1 {
+    position: relative; 
+    font-size: 50px;
+    
+ }
+ .currentconditions {
+    display: inline-block;
+    padding-inline-start: 70px;
+    width: 100px;
+    height: auto;
+    vertical-align: right;
+
+}
+ 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
+       
+
+ }
+      
+  
