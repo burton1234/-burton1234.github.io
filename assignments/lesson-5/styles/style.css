@@ -1,17 +1,16 @@
 body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    
     height: 100%;
     
-  }
+}
 
 header {
     background-color: black;
-    position: fixed;
+    position: sticky;
     text-align: center;
     height: 150px;
     width: 100%;
-    }
+}
 
 header > img {
  width: 100px;
@@ -28,13 +27,9 @@ header > img {
     display: inline-block;
  }     
 
-   
-    
-   
  .headertext h1 {
     position: relative; 
     font-size: 50px;
-    
  }
  .currentconditions {
     display: inline-block;
@@ -42,14 +37,13 @@ header > img {
     width: 100px;
     height: auto;
     vertical-align: right;
+ }
 
-}
 ul {
-    list-style-type: lower-alpha;
-    content:;
-    margin: 10px;
-    border: float;
-    padding: 5px;
+    list-style-type: block;
+    
+    margin: 0%;
+    padding: 0px;
     overflow: hidden;
     background-color: black;
 }
@@ -63,14 +57,22 @@ li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+     
 }
 
 li a:hover {
     background-color: gray;
 }
- 
-footer {
+h2 { text-align: center;
+    
+}
+main img {
+    
+    height: auto;
+    width: 100%;
+} 
+
+ footer {
     position: fixed;
     left: 0;
     bottom: 0;
