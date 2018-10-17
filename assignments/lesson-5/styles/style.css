@@ -45,11 +45,13 @@ header > img {
 
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: lower-alpha;
+    content:;
+    margin: 10px;
+    border: float;
+    padding: 5px;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 li {
@@ -57,7 +59,7 @@ li {
 }
 
 li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -65,7 +67,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: gray;
 }
  
 footer {
