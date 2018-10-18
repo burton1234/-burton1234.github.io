@@ -6,7 +6,8 @@ body {
 
 header {
     background-color: black;
-    position: static;
+    position: fixed;
+    top: 0px;
     text-align: center;
     height: 150px;
     width: 100%;
@@ -42,16 +43,18 @@ header > img {
 
 ul {
     list-style-type: inline block;
+    position: fixed;
+    top: 150px;
     margin: 0%;
-    padding: 0px;
+    padding: 0%;
+    width: 100%;
     background-color: black;
-    text-align: center
+    text-align: center;
 }
 
 li {
-    display: inline-block
- 
-
+    display: inline-block;
+    
 }
 
 li a {
@@ -63,25 +66,22 @@ li a {
 }
 
 li a:hover {
-    background-color: gray;
-}
-h2 { text-align: center;
+    background-color:green;
     
 }
-main img {
-   
-} 
-
- footer {
-    position: fixed;
+h6 { text-align: center;
+    position: absolute;
+    top: 140px;
     left: 0;
-    bottom: 0;
     height: 75px;
     width: 100%;
-    background-color:black;
-    color: white; 
-    text-align: center; 
-} 
+    background-color:green;
+    color:black; 
+    text-align: center;
+    font-size: 24px; 
+    
+    
+}
 .weathersummary {
     position: absolute;
     top: 300px;
@@ -92,21 +92,52 @@ main img {
     font-weight: bold;
     font-size: 15px;
     }
+ .value{
+     color: white;
+ }   
 .forecast {
-    position: fixed;
+    position: relative;
     left: 0;
-    bottom: 76px;
+    bottom: 15px;
     height: 100px;
     width: 100%;
     background-color:green;
     color:black; 
     text-align: center; 
-    
-    }
-.image {
-    position: relative;
-    width: 100%;
    
+    }
+ table{
+    display: inline-block;
+    color:black;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 0px;
+ }   
+th {
+    font-size: 15px;
+}
+
+ .image {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.park{
+    position: relative;
+    width: 50%;
+    float: right;
+    padding: 5px;
+    
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
 }
   
   
