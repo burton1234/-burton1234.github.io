@@ -6,10 +6,11 @@ body {
 
 header {
     background-color: black;
-    position: sticky;
+    position: static;
     text-align: center;
     height: 150px;
     width: 100%;
+    
 }
 
 header > img {
@@ -40,16 +41,17 @@ header > img {
  }
 
 ul {
-    list-style-type: block;
-    
+    list-style-type: inline block;
     margin: 0%;
     padding: 0px;
-    overflow: hidden;
     background-color: black;
+    text-align: center
 }
 
 li {
-    float: left;
+    display: inline-block
+ 
+
 }
 
 li a {
@@ -67,9 +69,7 @@ h2 { text-align: center;
     
 }
 main img {
-    
-    height: 500px;
-    width: 100%;
+   
 } 
 
  footer {
@@ -81,8 +81,32 @@ main img {
     background-color:black;
     color: white; 
     text-align: center; 
-       
-
- }
-      
+} 
+.weathersummary {
+    position: absolute;
+    top: 300px;
+    left: 2em;
+    width: 200px;
+    padding: 4px;
+    background-color:royalblue;
+    font-weight: bold;
+    font-size: 15px;
+    }
+.forecast {
+    position: fixed;
+    left: 0;
+    bottom: 76px;
+    height: 100px;
+    width: 100%;
+    background-color:green;
+    color:black; 
+    text-align: center; 
+    
+    }
+.image {
+    position: relative;
+    width: 100%;
+   
+}
+  
   
