@@ -71,12 +71,13 @@ li a:hover {
 }
 h6 { text-align: center;
     position: absolute;
+    padding: 20px;
     top: 140px;
     left: 0;
-    height: 75px;
+    height: 35px;
     width: 100%;
-    background-color:green;
-    color:black; 
+    background-color: royalblue;
+    color:white; 
     text-align: center;
     font-size: 24px; 
     
@@ -88,7 +89,7 @@ h6 { text-align: center;
     left: 2em;
     width: 200px;
     padding: 4px;
-    background-color:royalblue;
+    background-color: green;
     font-weight: bold;
     font-size: 15px;
     }
@@ -122,11 +123,26 @@ th {
     height: auto;
     width: 100%;
 }
-.park{
-    position: relative;
-    width: 50%;
+aside{
+    position: static;
+    top:25%;
+    bottom: 50%;
     float: right;
     padding: 5px;
+ 
+}
+section {
+    position: static;
+    top: 15%;
+    bottom: 20%;
+    width: 52%;
+    float: left;
+    padding: 5px;
+    background: orange;
+    size: 20px;
+    size: 50px;
+    font: times;
+    font-size: 24px;
     
 }
 footer {
