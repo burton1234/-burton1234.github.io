@@ -132,30 +132,42 @@ aside{
   position: -webkit-sticky;
   position: sticky;
   top: 20.75%;
-  padding: 5px;
+  padding: 10px;
   float:right;
 }
-section {
+.franklin{
     position: static;
-    top: 30%;
-    height: 20%;
-    bottom: 100%;
+    top: 0%;
+    height: 0%;
+    bottom:0%;
     width: 100%;
     float: left;
-    padding: 5px;
-    background: orange;
+    padding: 10px;
+    background:gray;
     size: 20px;
     size: 50px;
-    font: times;
+   
     font-size: 24px;
     
 }
 .image3{
-    position: -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
   top: 20.75%;
   padding: 5px;
   float:right;
+  top:20%;
+}
+
+article{
+    position: relative;
+    left: 0;
+    bottom: 20%;
+    height: 30px;
+    width: 100%;
+    background-color:green;
+    color:black; 
+    float: left;
 }
 footer {
     position: fixed;
