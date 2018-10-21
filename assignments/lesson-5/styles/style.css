@@ -136,9 +136,9 @@ div img{
     display: inline-block;
     color:white;
     text-align: center;
-    font-size: 15px;
-    padding-left: 0px;
- }   
+    font-size: 1em;
+}   
+
 th {
     font-size: 15px;
 }
