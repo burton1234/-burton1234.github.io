@@ -92,9 +92,16 @@ h6 { text-align: center;
     
 }
 
-
+@media only screen and (min-width: 500px) {
     
-
+    .row-1 {width: 20%;}
+    .col-2 {width: 20%;}
+    .row-3 {width: 50%;}
+    .col-4 {width: 20%;}
+    .col-5 {width: 20%;}
+    
+  
+}
 
 div img{
     
