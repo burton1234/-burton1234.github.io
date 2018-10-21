@@ -79,7 +79,7 @@ li a:hover {
 h6 { text-align: center;
     position: -webkit-sticky;
     position: sticky;
-    padding: .75em;
+    padding: 1em;
     top: 33%;
     height: 1em;
     width: 100%;
