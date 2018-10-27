@@ -3,6 +3,10 @@ body {
     height: 100%;
     
 }
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
 main{
     height: 20em;
     width: 100%;
