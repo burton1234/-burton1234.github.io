@@ -3,6 +3,8 @@ body {
     height: 100%;
     
 }
+
+
 .responsive {
     max-width: 100%;
     height: auto;
@@ -29,7 +31,12 @@ header > img {
  padding-right: 80px;
  padding-bottom: 20px;
  height: auto;
+}
  
+@media screen and (min-width: 601px) {
+    header {
+      font-size: 80px;
+    }
  }
 
  .headertext {
