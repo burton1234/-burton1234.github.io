@@ -3,12 +3,6 @@ body {
     height: 100%;
     
 }
-
-
-.responsive {
-    max-width: 100%;
-    height: auto;
-}
 main{
     height: 20em;
     width: 100%;
@@ -31,37 +25,9 @@ header > img {
  padding-right: 80px;
  padding-bottom: 20px;
  height: auto;
-}
  
-@media screen and (min-width: 601px) {
-    header {
-      font-size: 80px;
-    }
  }
- .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
- }
- .wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-  } 
-  .wrapper {
-    display: grid;
-    grid-template-columns: 500px 1fr 2fr;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 20px repeat(6, 1fr) 20px;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr 2fr);
-  }
+
  .headertext {
     font-size: 20px;
     position: relative;
@@ -120,7 +86,7 @@ h6 { text-align: center;
     background-color: green;
     color:white; 
     text-align: center;
-    font-size: 30px; 
+    font-size: 24px; 
     z-index: 0;
     
     
