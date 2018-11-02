@@ -14,22 +14,37 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     position: relative;
-    background-color: red;
+    background-color: black;
+    height: 130px;
+    z-index: +6;
+    
 }
 .flexItem2{
-    font: white;
+    color:white; 
+}
+.flexItem4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    color: white;
 }
 .container2 {
-    position: fixed;
+    position: absolute;
+    margin: 150px;
     display: flex;
-    justify-content: center;
+    justify-items: center;
+    justify-content: space-around;
     height: 50px;
     width: 100%;
     background-color: black;
 }
-    
+.flexItem{
+    font: white; 
+}
+   
 
 ul {
     list-style-type: inline block;
@@ -43,8 +58,7 @@ ul {
     z-index: +4;
 }
 
-li {
-    display: inline-block;
+
     
 }
 
