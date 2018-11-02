@@ -18,7 +18,7 @@ body {
     justify-content: space-around;
     position: relative;
     background-color: black;
-    height: 130px;
+    height: auto;
     z-index: +6;
     
 }
