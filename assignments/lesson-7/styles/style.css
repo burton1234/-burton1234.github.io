@@ -32,8 +32,8 @@ body {
     color: white;
 }
 .container2 {
-    position: absolute;
-    margin: 150px;
+    position: auto;
+   
     display: flex;
     justify-items: center;
     justify-content: space-around;
