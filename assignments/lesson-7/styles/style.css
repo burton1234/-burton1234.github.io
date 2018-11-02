@@ -9,86 +9,36 @@ body {
     max-width: 100%;
     height: auto;
 }
-main{
-    height: 20em;
-    width: 100%;
-}
 
 
-header {
-    background-color: black;
-    position: fixed;
-    top: 0px;
-    text-align: center;
-    height: 150px;
-    width: 100%;
-    z-index: +10;
-    
-}
 
-header > img {
- width: 100px;
- padding-right: 80px;
- padding-bottom: 20px;
- height: auto;
-}
- 
-@media screen and (min-width: 601px) {
-    header {
-      font-size: 80px;
-    }
- }
- .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
- }
- .wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-  } 
-  .wrapper {
-    display: grid;
-    grid-template-columns: 500px 1fr 2fr;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 20px repeat(6, 1fr) 20px;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr 2fr);
-  }
- .headertext {
-    font-size: 20px;
+.container {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    color: white;
-    display: inline-block;
- }     
-
- .headertext h1 {
-    position: relative; 
-    font-size: 50px;
- }
- .currentconditions {
-    display: inline-block;
-    padding-inline-start: 70px;
-    width: 100px;
-    height: auto;
-    vertical-align: right;
- }
+    background-color: red;
+}
+.flexItem2{
+    font: white;
+}
+.container2 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+    
 
 ul {
     list-style-type: inline block;
     position: fixed;
-    top: 150px;
+    top: 100px;
     margin: 0%;
     padding: 0%;
     width: 100%;
-    background-color: black;
+    background-color:black;
     text-align: center;
     z-index: +4;
 }
