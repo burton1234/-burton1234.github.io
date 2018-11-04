@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href= "styles/normalize.css">
         <link rel="stylesheet" href= "styles/style7.css">
-        <link language="javascript" href= "assignments/lesson-7/scripts/windchill.js"> 
+        <script> scr= "assignments/lesson-7/scripts/windchill.js"</script> 
 
     </head> 
   
@@ -40,13 +40,13 @@
                 <h3 class="label">Currently:</h3> 
                 <p class="value">Sunny</p>
                 <p class="label">Temperature:</p>
-                <p id="value1">76</p>
+                <p id="value1">32</p>
                 <p class="label">Humidity:</p>
                 <p class="value">69%</p>
                 <p class="label">Precipitation:</p>
                 <p class="value">0 inches</p>
                 <p class="label">Wind Speed:</p>
-                <p id="value2">5 </p>
+                <p id="value2">10</p>
                
                 
                 <div id="output"></div>
@@ -54,7 +54,7 @@
                 let x = parseInt(document.getElementById("value1").innerHTML);
                 let y = parseInt(document.getElementById("value2").innerHTML);
                 
-                let result = 35.74 + (0.6215 * x) + (0.4275 * x - 35.75)  *  y ^ 0.16;
+                let result = (35.74 + (0.6215*x)) - 35.75*(y^.16) + (.4275*x)*(y^.16);
                 
                 // Output - round to one decimal and output to div
                 document.getElementById("output").innerHTML =
