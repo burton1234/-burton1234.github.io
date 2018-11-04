@@ -50,16 +50,16 @@ body {
 .flexItem{
     font: white; 
 }
-.container3{
+.container3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     
-   
-    
-    
 }
-  
+img{
+    height: 350px; 
+    width: 350px; 
+}
      
 
 
