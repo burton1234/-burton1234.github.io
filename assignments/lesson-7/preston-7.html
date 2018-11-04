@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href= "styles/normalize.css">
         <link rel="stylesheet" href= "styles/style7.css">
-        <script> scr="assignments/lesson-7/scripts/windchill.js"</script> 
+        <link href="scripts/windchill.js"> 
 
     </head> 
   
@@ -28,7 +28,7 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="assignments/lesson-7/gallery-7.html">Gallery</a></li>
         </ul>
 
          <h6 style="font-size:2vw;"> The Town of Preston </h6>  
@@ -47,23 +47,21 @@
                 <p class="value">0 inches</p>
                 <p class="label">Wind Speed:</p>
                 <p id="value2">10</p>
-               
-                
                 <div id="output"></div>
-               <script> 
+                <script>
                 let x = parseInt(document.getElementById("value1").innerHTML);
                 let y = parseInt(document.getElementById("value2").innerHTML);
                 
-                let result = (35.74 + (0.6215*x)) - 35.75*(y^.16) + (.4275*x)*(y^.16);
+                let result = 35.74+(0.6215*x)-(35.75*(y^.16))+((.4275*x)*(y^.16));
                 
                 // Output - round to one decimal and output to div
-                document.getElementById("output").innerHTML =
-                 "The Wind Chill Is <strong>" + result.toFixed(1) + "</strong>.";
-               </script> 
+                  document.getElementById("output").innerHTML =
+                  "The Wind Chill Is <strong>" + result.toFixed(1) + "</strong>.";
+                  </script>
                </div>
               </main>  
             <div background ="imageb">
-                    <img src= "/assignments/lesson-5/images/weatherstorm.jpg" alt="background image" width="100%" class="responsive">  
+                    <img src= "/assignments/lesson-7/images/weatherstorm.jpg" alt="background image" width="100%" class="responsive">  
             </div>            
               <div style="font-size:.89vw" class="forecast">
                             <h2>High Temperature Forecast</h2>
@@ -100,11 +98,11 @@
         </section>
 
          <aside background="image2">
-        <img src= "/assignments/lesson-5/images/3.jpg" alt="manwoman" class="responsive">  
+        <img src= "/assignments/lesson-7/images/3.jpg" alt="manwoman" class="responsive">  
          </aside>
         
          <section background="image3">  
-            <img src= "/assignments/lesson-5/images/jumping.jpg" alt="jumping" style="width:50%;" class="reponsive"> 
+            <img src= "/assignments/lesson-7/images/jumping.jpg" alt="jumping" style="width:50%;" class="reponsive"> 
          </section>   
         <article style="height: 20%;">
           <br>
@@ -114,7 +112,7 @@
           562.958.4587 ||
           theweathersite@tws.com 
           </p>
-          <img src= "/assignments/lesson-5/images/Preston.PNG" alt="preston" style="width:50%;" class="responsive"> 
+          <img src= "/assignments/lesson-7/images/Preston.PNG" alt="preston" style="width:50%;" class="responsive"> 
         </article>                 
         
         
