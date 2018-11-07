@@ -66,6 +66,7 @@ img{
     height: 350px; 
     width: 350px; 
     box-shadow: 5px 5px;
+    z-index: +4;
 }
 
 
@@ -116,37 +117,37 @@ h6 { text-align: center;
 div img{
     
     position: relative;
-    top: 0em;
-    bottom:em;
-    z-index: -1;
+    top: 10em;
+    bottom:10em;
+    z-index: +3;
     
 }
 
 .weathersummary {
     position: relative;
     top: 130px;
-    left: 15em;
-    width: 15em;
+    left: 150px;
+    width: 150px;
     padding: 1em;
     background-color: green;
     font-weight: bold;
     font-size: 15px;
-    z-index: +3;
+    z-index: +2;
     }
  .value{
      color: white;
  }   
 .forecast {
-    position: -webkit-sticky;
+    position: absolute;
     position: sticky;
-    top: 21%;
-    bottom: 5em;
-    height: 6em;
+    top: 23%;
+    bottom: 10%;
+    height: 100px;
     width: 100%;
     background-color: green;
     color:white; 
     text-align: center; 
-    z-index:+5;
+    z-index:+2;
    
     }
  table{
@@ -166,7 +167,7 @@ aside{
   bottom: 0em;
   padding-right: 1%;
   float:right;
-  z-index: 2;
+  z-index: +4;
 }
 
 
@@ -187,8 +188,9 @@ aside{
 .image3{
   
   padding: 5px;
+  width: 100%;
   float:right;
-  z-index: +1;
+  z-index: +4;
 }
 
 article{
