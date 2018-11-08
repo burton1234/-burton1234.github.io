@@ -1,0 +1,46 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    
+}
+
+header{text-align: center;
+}
+table{
+    margin-left: 200px;
+}
+th{
+    background:#7fb9c2;
+    padding: 20px;
+}
+
+tbody{background: #628ca6;
+    color: white;
+    padding: 20px}
+
+td{
+    background: #e7f0ed;
+    color: black;
+    padding: 20px
+}
+tfoot{
+    background:#7fb9c2;
+    padding: 10px; 
+}
+
+
+     
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
+    z-index: +4;
+}
+  
+  
