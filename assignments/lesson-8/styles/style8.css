@@ -1,34 +1,62 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
-    height: 100%;
+    font-family: Ubuntu, sans-serif;
+    }
     
-}
-
-header{text-align: center;
-}
-table{
-    margin-left: 200px;
-}
-th{
-    background:#7fb9c2;
-    padding: 20px;
-}
-
-tbody{background: #628ca6;
+    table {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    width: 290px;
+    box-shadow: 10px 10px 10px grey;
+    }
+    
+    td {
+    text-align: center;
+    border: 1px solid #d9d4d9;
+    }
+    
+    thead tr:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #7fb9c2;
+    height: 45px;
+    }
+    
+    thead tr:nth-child(2) {
+    font-weight: bold;
+    background-color: #628ca6;
     color: white;
-    padding: 20px}
-
-td{
-    background: #e7f0ed;
-    color: black;
-    padding: 20px
-}
-tfoot{
-    background:#7fb9c2;
-    padding: 10px; 
-}
-
-
+    }
+    
+    table, td, th {
+    border: 1px solid #d9d4d9;
+    }
+    
+    tr {
+    height: 33px;
+    }
+    
+    tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+    }
+    
+    tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+    }
+    
+    tfoot {
+    font-size: .75rem;
+    background-color: #7fb9c2;
+    text-align: center;
+    }
+    
+    tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+    }
+    
+    tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+    }
      
 
 footer {
