@@ -1,10 +1,29 @@
 body {
+    height: 100%;
     font-family: Ubuntu, sans-serif;
+    color: gold;
     
     }
-     
+img{
     
-    table {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+z-index: -1;   
+}  
+.test{
+    position: absolute;
+    top: 0%;
+    left: 100px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    
+}    
+table {
+    padding-bottom: 1px;   
     border: 1px solid lightgrey;
     border-collapse: collapse;
     width: 290px;

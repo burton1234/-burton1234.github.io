@@ -1,0 +1,40 @@
+body {
+    height: 100%;
+    font-family: Ubuntu, sans-serif;
+    color: gold;
+    }
+    h1{
+        white-space: normal;
+    }
+
+img{
+    
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+z-index: -1;   
+}  
+h1{
+    position: absolute;
+    font-size: 5em;
+    top: 0%;
+    margin: 20px;
+    max-width: 100%;
+    padding: 16px;
+    
+}    
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 65px;
+        width: 100%;
+        background-color:black;
+        color: white; 
+        text-align: center; 
+        z-index: +4;
+    }
+
