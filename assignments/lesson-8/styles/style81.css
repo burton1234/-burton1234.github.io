@@ -1,13 +1,15 @@
 body {
     font-family: Ubuntu, sans-serif;
+    
     }
+     
     
     table {
-    
     border: 1px solid lightgrey;
     border-collapse: collapse;
     width: 290px;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px black;
+    z-index: +3
     }
     
     td {
@@ -18,18 +20,18 @@ body {
     thead tr:first-child {
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: #7fb9c2;
+    background-color: green;
     height: 45px;
     }
     
     thead tr:nth-child(2) {
     font-weight: bold;
-    background-color: #628ca6;
-    color: white;
+    background-color: green;
+    color:black;
     }
     
     table, td, th {
-    border: 1px solid #d9d4d9;
+    border: 1px solid black;
     }
     
     tr {
@@ -37,16 +39,16 @@ body {
     }
     
     tbody tr:nth-child(even) {
-    background-color: #e7ffed;
+    background-color:green;
     }
     
     tbody tr:nth-child(odd) {
-    background-color: #e7f0ed;
+    background-color:green;
     }
     
     tfoot {
     font-size: .75rem;
-    background-color: #7fb9c2;
+    background-color:orange;
     text-align: center;
     }
     
@@ -55,7 +57,7 @@ body {
     }
     
     tbody tr:nth-child(4) td:nth-child(3) {
-    background-color: #628ca6;
+    background-color: green;
     color: white;
     }
     footer {

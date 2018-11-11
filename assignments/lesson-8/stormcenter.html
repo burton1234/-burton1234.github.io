@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-        <title>Table Build</title>
+        <title>Storm Center</title>
         <meta http-equiv="x-ua-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link rel="stylesheet" href= "styles/style8.css">
+        <link rel="stylesheet" href= "styles/normalize.css">
+        <link rel="stylesheet" href= "styles/style81.css">
   </head> 
   
   <body> 
-  <main>          
+                <img name="background" src ="/assignments/lesson-7/images/weatherstorm.jpg" width="100%">    
+          
+  <main>    
+                          
         <form name="htmlform" method="post" action="html_form_send.php">
-                <table width="450px">
-                </tr>
+                <table width="500px">
+                
                 <tr>
                  <td valign="top">
                   <label for="first_name">First Name *</label>
@@ -23,7 +27,7 @@
                 </tr>
                  
                 <tr>
-                 <td valign="top"">
+                 <td valign="top">
                   <label for="last_name">Last Name *</label>
                 </td>
                  <td valign="top">
@@ -71,10 +75,15 @@
                                 <input list="storm_type" name="storm_type"> 
                                   <datalist id="storm_type">
                                         <option value="Flash Flood">
+                                                </option>
                                         <option value="Hail">
+                                                </option>
                                         <option value="Hurricane">
+                                                </option>
                                         <option value="Thunderstorm">
+                                                </option>
                                         <option value="Tornado">
+                                                </option>
                                  </datalist>
                                         
                                  <tr>
@@ -82,7 +91,7 @@
                                         <label for="storm_severity">Storm Severity</label>
                                         </td>
                                         <td valign="top">
-                                        <input  type="range (1-10)" name="storm_severity" range="1-5">
+                                        <input  type="range (1-5)" name="storm_severity" range="1-5">
                                         </td>
                                         </tr>  
                                         <tr>       
@@ -90,14 +99,29 @@
                                                         <label for="storm_loc">Storm Location</label>
                                                         </td>
                                                         <td valign="top">
-                                                        <input list="storm_loc" name="storm_loc"> 
-                                                          <select> id="storm_loc">
-                                                                <option value="Franklin">
-                                                                <option value="Greenville">
-                                                                <option value="Springfield">
-                                                                </select>
-                                                                       
-                            </td>
+                                                        
+                                                          <select id="storm_loc">
+                                                                <option value="Franklin"> Franklin
+                                                                 </option>
+                                                                <option value="Greenville"> Greenville
+                                                                 </option>
+                                                                <option value="Springfield"> Springfield
+                                                                </option>
+                                                                <option value="Select Region" selected>Select Region
+                                                                 </option>
+                                                           </select>
+                                                            
+                                                     <tr>          
+                                                     <td valign="top">
+                                                               
+                                                        <label for="storm_loc">Is the Storm DANGEROUS</label>   
+                                                       </td>
+                                                       <td>
+                                                        <input type="radio" name="s" value="Yes"> YES<br>
+                                                                <input type="radio" name="m" value="Maybe"> Maybe<br>
+                                                                <input type="radio" name="n" value="No"> No<br>  
+                                                                </td>                                                                         
+                            
                         </tr> 
                 
                 
@@ -113,16 +137,18 @@
                 </tr>
                 <tr>
                  <td colspan="2" style="text-align:center">
-                  <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
+                  <input type="submit" value="Submit">   ( <a href="">Record</a> )
                  </td>
+                </tr>
+                </td>
+                </tr>
+                </td>
                 </tr>
                 </table>
                 </form>
   
   
-  
-  
-  
+                
   
   
   
