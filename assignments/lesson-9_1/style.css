@@ -29,12 +29,22 @@ html {
   /* section styles */
   
   section article {
-    width: 33%;
-    float: left;
+    position: top;
+    
+    float: bottom;
+    width: 50%;
+    z-index: +3;
   }
-  
+  img{
+      background-image: url("/assignments/lesson-9_1/kisscc0-superman-drawing-superhero-comics-superman-5b4ecb5688ae54.5716471715318905185599.jpg");
+      margin-left: 20%;
+      position: absolute;
+      float: right;
+      z-index: -1;
+  }
   section p {
     margin: 5px 0;
+    
   }
   
   section ul {
@@ -46,14 +56,4 @@ html {
     letter-spacing: -5px;
     margin-bottom: 10px;
   }
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 65px;
-    width: 100%;
-    background-color:black;
-    color: white; 
-    text-align: center; 
-    z-index: +4;
-}
+  
