@@ -1,5 +1,8 @@
 {
-    "towns" : [
+  "pagename" : "Weather Site",
+  "created" : 2018,
+  "active" : true,
+  "towns" : [
         
     {
       "name": "Fish Haven",

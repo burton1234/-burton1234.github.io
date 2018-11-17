@@ -15,15 +15,83 @@
   <main>    
          <img name="test" src= "/assignments/lesson-7/images/weatherstorm.jpg" alt="background image" >                  
         
-         <script>
-            var myJSON = '{"name":"John", "age":31, "city":"New York"}';
-            var myObj = JSON.parse(myJSON);
-            document.getElementById("demo").innerHTML = myObj.name;
-            </script>
-                    
+         <!DOCTYPE html>
+         <html lang="en-us">
+           <head>
+                 <title>Super Heros</title>
+                 <meta http-equiv="x-ua-Compatible" content="ie=edge">
+                 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
                 
-                
-                
+                 <link rel="stylesheet" href= "/assignments/lesson-9_1/style.css">
+           </head> 
+           
+          <body>        
+          <header>
+               
+          </header>               
+                         
+          <section>
+               <img src= "/assignments/lesson-9_1/kisscc0-superman-drawing-superhero-comics-superman-5b4ecb5688ae54.5716471715318905185599.jpg" alt="background image" >
+          </section>               
+                         
+          <script>
+          var header = document.querySelector('header');
+          var section = document.querySelector('section');
+          var requestURL = 'https://burton1234.github.io/assignments/lesson-9/towndata.json';
+          var request = new XMLHttpRequest();
+          request.open('GET', requestURL);
+          request.responseType = 'json';
+          request.send();
+          request.onload = function() {
+           var towndata = request.response;
+           populateHeader(towndata);
+           showHeroes(towndata);
+         }
+         function populateHeader(jsonObj) {
+                     var myH1 = document.createElement('h1');
+                     myH1.textContent = jsonObj['pagename'];
+                     header.appendChild(myH1);
+                   
+                     var myPara = document.createElement('p');
+                     myPara.textContent = 'Page Name: ' + jsonObj['pagename'] + ' // Created : ' + jsonObj['created'];
+                     header.appendChild(myPara);
+                   }
+                   function showHeroes(jsonObj) {
+           var heroes = jsonObj['members'];
+               
+           for (var i = 0; i < heroes.length; i++) {
+             var myArticle = document.createElement('article');
+             var myH2 = document.createElement('h2');
+             var myPara1 = document.createElement('p');
+             var myPara2 = document.createElement('p');
+             var myPara3 = document.createElement('p');
+             var myList = document.createElement('ul');
+         
+             myH2.textContent = heroes[i].name;
+             myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+             myPara2.textContent = 'Age: ' + heroes[i].age;
+             myPara3.textContent = 'Superpowers:';
+                 
+             var superPowers = heroes[i].powers;
+             for (var j = 0; j < superPowers.length; j++) {
+               var listItem = document.createElement('li');
+               listItem.textContent = superPowers[j];
+               myList.appendChild(listItem);
+             }
+         
+             myArticle.appendChild(myH2);
+             myArticle.appendChild(myPara1);
+             myArticle.appendChild(myPara2);
+             myArticle.appendChild(myPara3);
+             myArticle.appendChild(myList);
+         
+             section.appendChild(myArticle);
+           }
+         }
+          </script> 
+          </body> 
+          
+         </html>
                 
   
                 
