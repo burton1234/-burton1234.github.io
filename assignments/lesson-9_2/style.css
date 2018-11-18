@@ -1,0 +1,86 @@
+/* || general styles */
+
+html {
+    font-family: 'Gloria Hallelujah', helvetica, arial, sans-serif;
+  }
+  
+  
+    
+  
+  
+  h1, h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  
+  /* header styles */
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  
+  }
+  .grid-container {
+    
+    position: absolute;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    padding: 1px;
+  }
+  .grid-preston {
+    margin-left: 20em;
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .grid-soda{
+    margin-left: 20em;
+    margin-right: 10px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }  
+  .grid-fish{
+    margin-left: 20em;
+    margin-right: 10px;
+    margin-top: -60px;
+    margin-bottom: 10px;
+  }     
+  
+  /* section styles */
+  
+  section {
+    
+    
+    width: 50%;
+    z-index: +3;
+  }
+  img{
+    height: 300px;
+    width: 600px;
+    position: absolute;  
+    
+      margin-left: 20%;
+     
+      
+      z-index: -1;
+  }
+  section p {
+    margin: 5px 0;
+    
+  }
+  
+  section ul {
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+        <title>Super Heros</title>
+        <meta http-equiv="x-ua-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+       
+        <link rel="stylesheet" href= "/assignments/lesson-9_2/style.css">
+  </head> 
+  
+ <body>        
+ <header>
+  
+ </header>               
+ <section>               
+ <div class="grid-container">
+  <div class="grid-preston"> <img src= "/assignments/lesson-9_2/images/preston.jpg" alt="background image" ></div>
+  <div class="grid-soda"> <img src= "/assignments/lesson-9_2/images/soda.jpg" alt="background image" ></div>
+  <div class="grid-fish"> <img src= "/assignments/lesson-9_2/images/fish.jpg" alt="background image" ></div>
+  
+  
+ </div>              
+ </section>               
+ <script>
+ var header = document.querySelector('header');
+ var section = document.querySelector('section');
+ var requestURL = '/assignments/lesson-9_2/superheros.json';
+ var request = new XMLHttpRequest();
+ request.open('GET', requestURL);
+ request.responseType = 'json';
+ request.send();
+ request.onload = function() {
+  var superHeroes = request.response;
+  populateHeader(superHeroes);
+  showHeroes(superHeroes);
+}
+function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['squadName'];
+            header.appendChild(myH1);
+          
+            var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+          }
+          function showHeroes(jsonObj) {
+  var weather = jsonObj['towns'];
+      
+  for (var i = 0; i < weather.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myPara5 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = weather[i].name;
+    myPara1.textContent = 'Year Founded: ' + weather[i].yearfounded;
+    myPara2.textContent = 'Motto: ' + weather[i].age;
+    myPara3.textContent = 'Population:  ' + weather[i].currentPopulation;
+    myPara4.textContent = 'Average Rainfall:  ' + weather[i].averageRainfall;
+    myPara5.textContent = 'Events:';
+        
+    var town = weather[i].events;
+    for (var j = 0; j < town.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = town[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myPara5);
+    myArticle.appendChild(myList);
+    section.appendChild(myArticle);
+  }
+}
+ </script> 
+
+</body> 
+ 
+</html>
