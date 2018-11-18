@@ -17,14 +17,13 @@
   <div class="grid-preston"> <img src= "/assignments/lesson-9_2/images/preston.jpg" alt="background image" ></div>
   <div class="grid-soda"> <img src= "/assignments/lesson-9_2/images/soda.jpg" alt="background image" ></div>
   <div class="grid-fish"> <img src= "/assignments/lesson-9_2/images/fish.jpg" alt="background image" ></div>
-  
-  
- </div>              
- </section>               
+  </div>              
+ 
+</section>               
  <script>
  var header = document.querySelector('header');
  var section = document.querySelector('section');
- var requestURL = '/assignments/lesson-9_2/superheros.json';
+ var requestURL = '/assignments/lesson-9_2/towndata.json';
  var request = new XMLHttpRequest();
  request.open('GET', requestURL);
  request.responseType = 'json';
@@ -36,14 +35,14 @@
 }
 function populateHeader(jsonObj) {
             var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['squadName'];
+            myH1.textContent = jsonObj['pagename'];
             header.appendChild(myH1);
           
             var myPara = document.createElement('p');
             myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
             header.appendChild(myPara);
           }
-          function showHeroes(jsonObj) {
+function showHeroes(jsonObj) {
   var weather = jsonObj['towns'];
       
   for (var i = 0; i < weather.length; i++) {
@@ -81,7 +80,10 @@ function populateHeader(jsonObj) {
   }
 }
  </script> 
-
+<footer>
+  &copy;2018 || William Burton || Location: California ||   
+  <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning</a>
+</footer>
 </body> 
  
 </html>

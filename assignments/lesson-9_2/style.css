@@ -2,11 +2,8 @@
 
 html {
     font-family: 'Gloria Hallelujah', helvetica, arial, sans-serif;
+    margin-bottom: 150px;
   }
-  
-  
-    
-  
   
   h1, h2 {
     font-family: 'Gloria Hallelujah', cursive;
@@ -15,8 +12,10 @@ html {
   /* header styles */
   
   h1 {
+    
     font-size: 4rem;
     text-align: center;
+    color: black;
   }
   
   header p {
@@ -25,57 +24,63 @@ html {
     text-align: center;
   
   }
-  .grid-container {
+  article{
+    padding-top:0pc;
+    margin-top: 5em;
+    margin-left: 10px;
     
+  }
+  .grid-container {
+    margin-top: 1px;
     position: absolute;
     display: grid;
     grid-template-rows: 300px 300px 300px;
     padding: 1px;
+    
   }
+  
   .grid-preston {
-    margin-left: 20em;
+    
+    margin-left: 25em;
     margin-right: 10px;
-    margin-top: -10px;
-    margin-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 0px;
   }
   .grid-soda{
-    margin-left: 20em;
+    margin-left: 25em;
     margin-right: 10px;
-    margin-top: -30px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }  
   .grid-fish{
-    margin-left: 20em;
+    margin-left: 25em;
     margin-right: 10px;
-    margin-top: -60px;
+    margin-top: 40px;
     margin-bottom: 10px;
   }     
   
   /* section styles */
   
   section {
-    
-    
-    width: 50%;
+    width: 30%;
     z-index: +3;
   }
   img{
-    height: 300px;
+        height: 300px;
     width: 600px;
     position: absolute;  
-    
       margin-left: 20%;
-     
-      
+    
       z-index: -1;
   }
   section p {
-    margin: 5px 0;
+    
+    margin: 5px ;
     
   }
   
   section ul {
-    margin-top: 0;
+    margin-top: 10px;
   }
   
   h2 {
@@ -83,4 +88,15 @@ html {
     letter-spacing: -5px;
     margin-bottom: 10px;
   }
-  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center;
+    padding-top: 25px; 
+    z-index: +4;
+  }
