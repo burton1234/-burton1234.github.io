@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+        <title>Super Heros</title>
+        <meta http-equiv="x-ua-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+       
+        <link rel="stylesheet" href= "/assignments/lesson-10/style.css">
+  </head> 
+  
+ <body>        
+ <header>
+    <img src="/assignments/lesson-4/images/weather-icon-png-5.png" alt="weather icon" style="width:100px;height:100px;">
+    <div class="headertext">
+    <h1>The Weather Site</h1>
+    <div class="subheading">Where The Weather Changes Every 30 Minutes!</div>
+</div>
+<div class="currentconditions">
+     <img src="/assignments/lesson-4/images/logo.png" alt="logo" style="width:75px;height:75px;"> 
+     <p><font color="white">Partly Cloudy</font></p>
+</div>
+  <ul
+            <li><a href="#" onclick="">Menu</a>
+            <li><a href="/assignments/lesson-9_2/index.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+         </ul>
+ </header>               
+ <section>               
+ <div class="grid-container">
+  <div class="grid-preston"> <img src= "/assignments/lesson-9_2/images/preston.jpg" alt="preston" ></div>
+  <div class="grid-soda"> <img src= "/assignments/lesson-9_2/images/soda.jpg" alt="soda springs" ></div>
+  <div class="grid-fish"> <img src= "/assignments/lesson-9_2/images/fish.jpg" alt="fish haven" ></div>
+  </div>              
+ 
+</section>               
+ <script>
+ var header = document.querySelector('header');
+ var section = document.querySelector('section');
+ var requestURL = '/assignments/lesson-9_2/towndata.json';
+ var request = new XMLHttpRequest();
+ request.open('GET', requestURL);
+ request.responseType = 'json';
+ request.send();
+ request.onload = function() {
+  var superHeroes = request.response;
+  populateHeader(superHeroes);
+  showHeroes(superHeroes);
+}
+function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['pagename'];
+            header.appendChild(myH1);
+          
+            var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+          }
+function showHeroes(jsonObj) {
+  var weather = jsonObj['towns'];
+      
+  for (var i = 0; i < weather.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myPara5 = document.createElement('p');
+    var myList = document.createElement('ul');
+
+    myH2.textContent = weather[i].name;
+    myPara1.textContent = 'Year Founded: ' + weather[i].yearfounded;
+    myPara2.textContent = 'Motto: ' + weather[i].age;
+    myPara3.textContent = 'Population:  ' + weather[i].currentPopulation;
+    myPara4.textContent = 'Average Rainfall:  ' + weather[i].averageRainfall;
+    myPara5.textContent = 'Events:';
+        
+    var town = weather[i].events;
+    for (var j = 0; j < town.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = town[j];
+      myList.appendChild(listItem);
+    }
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myPara5);
+    myArticle.appendChild(myList);
+    section.appendChild(myArticle);
+  }
+}
+ </script> 
+<footer>
+  &copy;2018 || William Burton || Location: California ||   
+  <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning</a>
+</footer>
+</body> 
+ 
+</html>

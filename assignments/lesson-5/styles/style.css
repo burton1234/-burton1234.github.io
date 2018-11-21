@@ -139,11 +139,11 @@ th {
     font-size: 15px;
 }
 
-aside{
+aside.image2{
   position: relative;
-  top: -21em;
+    top: -21em;
   bottom: 0em;
-  padding-right: 1%;
+  padding-right: 10%;
   float:right;
   z-index: 2;
 }
