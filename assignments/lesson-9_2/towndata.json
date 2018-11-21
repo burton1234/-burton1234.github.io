@@ -1,6 +1,6 @@
 {
-    "pagename" : "Weather Site",
-    "homeTown" : "Any Town USA",
+    "pagename" : "",
+    "homeTown" : "",
     "formed" : 2018,
     "towns" : [
       {
