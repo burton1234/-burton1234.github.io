@@ -139,9 +139,12 @@ th {
     font-size: 15px;
 }
 
-aside.image2{
+aside {
+  height: auto;
+  width:500px;
+
   position: relative;
-    top: -21em;
+  top: -2em;
   bottom: 0em;
   padding-right: 10%;
   float:right;
@@ -149,19 +152,23 @@ aside.image2{
 }
 
 
-.franklin{
-    position: static;
+section.franklin{
+    position: absolute;
     overflow: auto;
-    top: 1%;
-    height: 0%;
+    float: left;
+    top: 200%;
+    height: 300px;
+    width:auto;
     bottom: 1.35em;
-    width: 100%;
+    width: 50%;
     background:orange;
     size: 20em;
-    size: 50em;
-    font-size: 24px;
+    font-size: 18px;
     z-index: 2;
     
+}
+p{
+    font-size: 18px;
 }
 .image3{
   
@@ -171,15 +178,14 @@ aside.image2{
 }
 
 article{
-    position: relative;
+    position: absolute;
     left: 50%;
-    top: -29.5em;
+    bottom: 15%;
     width: 60%;
-    background-color:green;
+    background-color: pink;
     color:black; 
     text-align: center;
     text-indent: 50px;
- 
     line-height: 1em;
     text-align: center;
 
