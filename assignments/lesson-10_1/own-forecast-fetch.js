@@ -1,5 +1,4 @@
-fetch
-('https://api.openweathermap.org/data/2.5/forecast?id=5604473&unit=imperial&APPID=ccaa556a54d939138764bcdf95d62cdc')
+fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&unit=imperial&APPID=467917115c2fb1ab165e7743f138efd0')
 .then(function(response) {
     return response.json();
 })
