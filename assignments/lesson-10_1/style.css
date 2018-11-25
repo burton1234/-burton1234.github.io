@@ -186,14 +186,14 @@ section.image3{
 }
 
 article{
-    margin-top: -150px;
-    margin-bottom: 15%;
-    border-bottom: 100px;
+    margin-top: -125px;
+    
+    border-bottom: 50px;
     position: relative;
     left: 50%;
-    bottom: 20%;
+    bottom: 5%;
     width: 40%;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     background-color: orange;
     color:black; 
     text-align: center;
