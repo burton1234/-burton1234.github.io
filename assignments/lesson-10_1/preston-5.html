@@ -6,9 +6,10 @@
         <meta http-equiv="x-ua-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href= "styles/normalize.css">
-        <link rel="stylesheet" href= "/assignments/lesson-5/styles/style.css">
+        <link rel="stylesheet" href= "/assignments/lesson-10_1/style.css">
         <script src="weatherapi.js"></script>
-        
+        <script src="/assignments/lesson-10_1/own-forecast-fetch.js"></script>
+
   </head> 
   
   <body>
@@ -22,7 +23,7 @@
             </div>
             <div class="currentconditions">
                  <img src="/assignments/lesson-4/images/logo.png" alt="logo" style="width:75px;height:75px;"> 
-                 <p><font color="white">Partly Cloudy</font></p>
+                 <p><font color="white"></font></p>
             </div>
 
         </header> 
@@ -44,17 +45,14 @@
               <h2>Weather Summary</h2>
               <div class="weatherdetails">
                 <h3 class="label">Currently:</h3> 
-                <p class="value">Sunny</p>
+                <p><span id="description"></span></p>
                 <p class="label">Temperature:</p>
                 <p><span id="current_temp"></span>&deg;F</p>
-                <p class="value">76 &deg;F</p>
                 <p class="label">Humidity:</p>
-                <p class="value">69%</p>
-                <p class="label">Precipitation:</p>
-                <p class="value">0 inches</p>
+                <p><span id="humidity"></span>&percnt;</p>
                 <p class="label">Wind Speed:</p>
-                <p class="value">5 mph</p>
-              </div>
+                <p><span id="wind_spd"></span> MPH</p>
+                 </div>
         </div>
         </main>    
             <div background ="imageb">
@@ -63,7 +61,7 @@
               <div class="forecast">
                             <h2>High Temperature Forecast</h2>
                             <table>
-                              <thead>
+                              <grid>
                                 <tr>
                                   <th>Day</th>
                                   <th>Wed</th>
@@ -72,16 +70,16 @@
                                   <th>Sat</th>
                                   <th>Sun</th>
                                 </tr>
-                              </thead>
+                              </grid>
                               <tbody>
-                                <tr>
+                                <grid>
                                   <th>Forecast</th>
-                                  <td>89&deg;F</td>
-                                  <td>87&deg;F</td>
-                                  <td>78&deg;F</td>
-                                  <td>75&deg;F</td>
-                                  <td>72&deg;F</td>
-                                </tr>
+                                  <td><p id="forecastday1">Day 1</p></td>
+                                  <td><p id="forecastday2">Day 2</p></td>
+                                  <td><p id="forecastday3">Day 3</p></td>
+                                  <td><p id="forecastday4">Day 4</p></td>
+                                  <td><p id="forecastday5">Day 5</p></td>
+                                </grid>
                               </tbody>
                             </table>
                           </div>
