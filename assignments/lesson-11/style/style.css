@@ -1,0 +1,223 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    height: 100%;
+    
+}
+main{
+    height: 20em;
+    width: 100%;
+}
+
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    z-index: +10;
+    
+}
+
+header > img {
+ width: 100px;
+ padding-right: 80px;
+ padding-bottom: 20px;
+ height: auto;
+ 
+ }
+
+ .headertext {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    display: inline-block;
+ }     
+
+ .headertext h1 {
+    position: relative; 
+    font-size: 50px;
+ }
+ .currentconditions {
+    display: inline-block;
+    padding-inline-start: 70px;
+    width: 100px;
+    height: auto;
+    vertical-align: right;
+ }
+
+ul {
+    list-style-type: inline block;
+    position: fixed;
+    top: 150px;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    z-index: +4;
+}
+
+li {
+    display: inline-block;
+    
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+     
+}
+
+li a:hover {
+    background-color:green;
+    
+}
+h6 { text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 1em;
+    top: 33%;
+    height: 1em;
+    width: 100%;
+    background-color: green;
+    color:white; 
+    text-align: center;
+    font-size: 30px; 
+    z-index: 0;
+    
+    
+}
+
+div img{
+    
+    position: relative;
+    top: 0em;
+    bottom:em;
+    z-index: -1;
+    
+}
+
+.weathersummary {
+    position: relative;
+    color: white;
+    top: 130px;
+    left: 15em;
+    width: 15em;
+    padding: 1em;
+    background-color: green;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: +4;
+    }
+ .value{
+     color: white;
+ }   
+.forecast {
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 10px;
+    top: 23%;
+    bottom: 5em;
+    height: 8em;
+    width: 100%;
+    background-color: green;
+    color:white; 
+    text-align: center; 
+    z-index:+3;
+   
+    }
+ span{
+     color: black;
+ }   
+ table{
+    display: inline-block;
+    color:black;
+    text-align: center;
+    font-size: 1em;
+}   
+
+th {
+    font-size: 15px;
+
+}
+td {
+    padding: 5px;
+}
+aside {
+  height: auto;
+  width:500px;
+
+  position: relative;
+  top: -2em;
+  bottom: 0em;
+  padding-right: 10%;
+  float:right;
+  z-index: 2;
+}
+
+
+section.franklin{
+    position: absolute;
+    overflow: auto;
+    float: left;
+    top: 100%;
+    height: 300px;
+    width:auto;
+    bottom: 1.35em;
+    width: 50%;
+    background:orange;
+    size: 20em;
+    font-size: 18px;
+    z-index: 2;
+    
+}
+p{
+    font-size: 18px;
+}
+section.image3{
+    position: relative;
+    left: 60%;
+    bottom: 20%; 
+  
+}
+
+article{
+    margin-top: -125px;
+    
+    border-bottom: 50px;
+    position: relative;
+    left: 50%;
+    bottom: 5%;
+    width: 40%;
+    padding-bottom: 20px;
+    background-color: orange;
+    color:black; 
+    text-align: center;
+    text-indent: 50px;
+    line-height: 1em;
+    text-align: center;
+    z-index: +2;
+
+
+}
+     
+
+footer {
+    position: fixed;
+    margin-top: 10px;
+    padding-top: 10px;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
+    z-index: +3;
+}
+  
+  

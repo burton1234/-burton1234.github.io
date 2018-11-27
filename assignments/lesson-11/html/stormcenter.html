@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+        <title>Storm Center</title>
+        <meta http-equiv="x-ua-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href= "styles/normalize.css">
+        <link rel="stylesheet" href= "/assignments/lesson-8/styles/style81.css">
+  </head> 
+  
+  <body>    
+        
+        
+  <main>    
+         <img name="test" src= "/assignments/lesson-7/images/weatherstorm.jpg" alt="background image" >                  
+        <div class="test">
+         <form name="htmlform" method="post" action="html_form_send.php">
+        <h1>Storm Center</h1>
+                <table width="500px">
+                
+                <tr>
+                 <td valign="top">
+                  <label for="first_name">First Name *</label>
+                 </td>
+                 <td valign="top">
+                  <input  type="text" name="first_name" maxlength="50" size="30" pattern="[A-Za-z]">
+                 </td>
+                </tr>
+                 
+                <tr>
+                 <td valign="top">
+                  <label for="last_name">Last Name *</label>
+                </td>
+                 <td valign="top">
+                  <input  type="text" name="last_name" maxlength="50" size="30">
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top">
+                  <label for="email">Email Address *</label>
+                 </td>
+                 <td valign="top">
+                  <input  type="email" name="email" maxlength="80" size="30" placeholder="john.smith@aol.com">
+                 </td>
+                 
+                </tr>
+                <tr>
+                 <td valign="top">
+                  <label for="telephone">Telephone Number</label>
+                 </td>
+                 <td valign="top">
+                  <input  type="number" name="telephone" maxlength="30" size="30" placeholder="(XXX) XXX-XXXX">
+                 </td>
+                </tr>
+               <tr>
+                <td valign="top">
+                <label for="zipcode">Zip Code</label>
+                </td>
+                <td valign="top">
+                <input  type="number" name="zipcode" maxlength="30" size="30" placeholder="XXXXX-XXXX">
+                </td>
+                </tr>
+                <tr>
+                        <td valign="top">
+                        <label for="storm_date">Storm Date</label>
+                        </td>
+                        <td valign="top">
+                        <input  type="date" name="storm_date" maxlength="30" size="30" placeholder="00/00/0000">
+                        </td>
+                        </tr>  
+                        <tr>
+                                <td valign="top">
+                                <label for="storm_type">Storm Type</label>
+                                </td>
+                                <td valign="top">
+                                <input list="storm_type" name="storm_type"> 
+                                  <datalist id="storm_type">
+                                        <option value="Flash Flood">
+                                                </option>
+                                        <option value="Hail">
+                                                </option>
+                                        <option value="Hurricane">
+                                                </option>
+                                        <option value="Thunderstorm">
+                                                </option>
+                                        <option value="Tornado">
+                                                </option>
+                                 </datalist>
+                                        
+                                 <tr>
+                                        <td valign="top">
+                                        <label for="storm_severity">Storm Severity</label>
+                                        </td>
+                                        <td valign="top">
+                                        <input  type="range (1-5)" name="storm_severity" range="1-5">
+                                        </td>
+                                        </tr>  
+                                        <tr>       
+                                                <td valign="top">
+                                                        <label for="storm_loc">Storm Location</label>
+                                                        </td>
+                                                        <td valign="top">
+                                                        
+                                                          <select id="storm_loc">
+                                                                <option value="Franklin"> Franklin
+                                                                 </option>
+                                                                <option value="Greenville"> Greenville
+                                                                 </option>
+                                                                <option value="Springfield"> Springfield
+                                                                </option>
+                                                                <option value="Select Region" selected>Select Region
+                                                                 </option>
+                                                           </select>
+                                                            
+                                                     <tr>          
+                                                     <td valign="top">
+                                                               
+                                                        <label for="storm_loc">Is the Storm DANGEROUS</label>   
+                                                       </td>
+                                                       <td>
+                                                        <input type="radio" name="s" value="Yes"> YES<br>
+                                                                <input type="radio" name="m" value="Maybe"> Maybe<br>
+                                                                <input type="radio" name="n" value="No"> No<br>  
+                                                                </td>                                                                         
+                            
+                        </tr> 
+                
+                
+                
+                <tr>
+                 <td valign="top">
+                  <label for="comments">Comments *</label>
+                 </td>
+                 <td valign="top">
+                  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                 </td>
+                 
+                </tr>
+                <tr>
+                 <td colspan="2" style="text-align:center">
+         ( <a href="thanks.html"> Record</a> )
+                
+                </td>
+                </tr>
+                </td>
+                </tr>
+                </td>
+                </tr>
+                </table>
+                </form>
+  </div>
+  
+                
+  
+  
+  
+  
+    <footer>
+                &copy;2018 || William Burton || Location: California ||   
+                <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning</a>
+        </footer>
+        
+    
+        
+  </main>
+  </body>
+</html>
