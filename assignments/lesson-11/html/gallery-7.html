@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-        <title>Eastern Idaho</title>
+        <title>Weather Gallery</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href= "styles/normalize.css">
-        <link rel="stylesheet" href= "styles/style7.css">
+        <link rel="stylesheet" href= "/assignments/lesson-11/style/wathergal.css">
   </head>
 <body>         
         <header>
@@ -31,22 +31,58 @@
     </ul>
 </nav>
 <main>
-   <div class="container3">
-        <div> <img src= "/assignments/lesson-7/images/image2.jpg"></div>
-        <div><img src= "/assignments/lesson-7/images/image3.jpg"></div>
-        <div><img src= "/assignments/lesson-7/images/image4.jpg"></div> 
-        <div><h3>hello world</h3></div>
-        <div><h3>hello world</h3></div>
-        <div><h3>hello world</h3></div>
-        <div><img src= "/assignments/lesson-7/images/image6.jpg"></div> 
-        <div><img src= "/assignments/lesson-7/images/image1.jpg"></div> 
-        <div><img src= "/assignments/lesson-7/images/weatherstorm.jpg"></div> 
-        <div><h3>hello world</h3></div>
-        <div><h3>hello world</h3></div>
-        <div><h3>hello world</h3></div>
-</div>    
+  
+    <section class="cards">
+      <article>
+        <img class="article-img" src="/assignments/lesson-7/images/image4.jpg" alt=" " />
+        <h1 class="article-title">
+          Title of article
+        </h1>
+      </article>
+      <article>
+        <img class="article-img" src="/assignments/lesson-7/images/image3.jpg" alt=" " />
+        <h1 class="article-title">
+          Title of article
+        </h1>
+      </article>
+      <article>
+        <img class="article-img" src="/assignments/lesson-7/images/image2.jpg" alt=" " />
+        <h1 class="article-title">
+          Title of article
+        </h1>
+      </article>
+      <article>
+        <img class="article-img" src="/assignments/lesson-7/images/image6.jpg" alt=" " />
+        <h1 class="article-title">
+          Title of article
+        </h1>
+      </article>
+      <article>
+        <img class="article-img" src="/assignments/lesson-7/images/image1.jpg" alt=" " />
+        <h1 class="article-title">
+          Title of article
+        </h1>
+      </article>
+      <article>
+        <img class="article-img" src="/assignments/lesson-7/images/weatherstorm.jpg" alt=" " />
+        <h1 class="article-title">
+          Title of article
+        </h1>
+      </article>
+    </section>   
+    
+     
    
 
 </main>
+<footer>
+  &copy;2018 || William Burton || Location: California ||   
+  <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning </a>
+  || <a id="date"></a>
+</footer>
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
 </body>
 </html>

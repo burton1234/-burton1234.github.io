@@ -183,15 +183,8 @@ aside{
     size: 50em;
     font-size: 24px;
     z-index: 2;
-    
-}
-.image3{
-  
-  padding: 5px;
-  width: 100%;
-  float:right;
-  z-index: +4;
-}
+    }
+
 
 article{
     position: relative;
