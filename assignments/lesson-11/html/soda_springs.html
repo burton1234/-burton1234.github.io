@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-        <title>Eastern Idaho</title>
+        <title>Soda Springs</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href= "styles/normalize.css">
-        <link rel="stylesheet" href= "/assignments/lesson-10_1/style.css">
-        <script src="weatherapi.js"></script>
-        <script src="/assignments/lesson-10_1/own-forecast-fetch.js"></script>
+        <link rel="stylesheet" href= "/assignments/lesson-11/style/townpages.css">
+        <script src="/assignments/lesson-11/script/sodasprings.js"></script>
+        <script src="/assignments/lesson-11/script/sodaspringforecast.js"></script>
+
 
   </head> 
   
@@ -22,9 +23,9 @@
                 <div class="subheading">Where The Weather Changes Every 30 Minutes!</div>
             </div>
             <div class="currentconditions">
-                 <img src="/assignments/lesson-4/images/logo.png" alt="logo" style="width:75px;height:75px;"> 
-                 <p><font color="white"></font></p>
-            </div>
+                 <img src="/assignments/lesson-4/images/logo.png" alt="logo" style="width:75px;height:75px;">
+                 <span id="description1"></span>
+                 </div>
 
         </header> 
        
@@ -37,58 +38,69 @@
           <li><a href="/assignments/lesson-11/html/fish_haven.html">Fish Haven</a></li>
           <li><a href="/assignments/lesson-11/html/stormcenter.html">Storm Center</a></li>
           <li><a href="/assignments/lesson-11/html/gallery-7.html">Gallery</a></li>
-         </ul>
+        </ul>
          <h6> The Town of Soda Springs </h6>  
         
          
     <div class="weathersummary">
               <h2>Weather Summary</h2>
               <div class="weatherdetails">
-                <h3 class="label">Currently:</h3> 
+                <p class="label">CURRENT CONDITIONS:</p> 
                 <p><span id="description"></span></p>
-                <p class="label">Temperature:</p>
-                <p><span id="current_temp"></span>&deg;F</p>
-                <p class="label">Humidity:</p>
-                <p><span id="humidity"></span>&percnt;</p>
-                <p class="label">Wind Speed:</p>
-                <p><span id="wind_spd"></span> MPH</p>
+                <p class="label">TEMPERATURE:</p>
+                <p><span id="current_temp"></span> &deg;F</p>
+                <p class="label">HUMIDITY:</p>
+                <p><span id="humidity"></span> &percnt;</p>
+                <p class="label">WIND SPEED:</p>
+                <p><span id="wind_spd"></span> mph</p>
+                <p class="label">WIND DIRECTION:</p>
+                <p><span id="wind_dir"></span> &deg;</p>
+                <p class="label">WIND CHILL:</p>
+                <p><span id="wind chill"></span> &deg;</p>
                  </div>
+                 <script>
+                  var temp= parseFloat(document.getElementById('current_temp').value);
+                  var wind= parseFloat(document.getElementById('wind_spd').value);
+                  var result= 35.74 + 0.6215 * temp -35.75 * Math.pow(wind,0.16)+ 0.4275 * temp * Math.pow(wind,0.16);
+                  document.getElementById('wind chill').innerHTML = result.toFixed(2);
+                  </script>
         </div>
         </main>    
-            <div background ="imageb">
-                    <img src= "/assignments/lesson-5/images/weatherstorm.jpg" alt="background image" width="100%">  
-            </div>            
+            <figure>
+            <img src= "/assignments/lesson-5/images/weatherstorm.jpg" alt="background image">  
+            </figure>            
               <div class="forecast">
-                            <h2>High Temperature Forecast</h2>
                             <table>
-                              <grid>
-                                <tr>
-                                  <th>Day</th>
-                                  <th>Wed</th>
-                                  <th>Thu</th>
-                                  <th>Fri</th>
-                                  <th>Sat</th>
-                                  <th>Sun</th>
-                                </tr>
-                              </grid>
-                              <tbody>
-                                <grid>
-                                  <th>Forecast&deg;F</th>
+                              <tr>
+                                  <th colspan="6">-- HIGH TEMP FORECAST --</th>
+                              </tr>
+                              <tr>
+                                  <th>Days Out:</th>
+                                  <th>1</th>
+                                  <th>2</th>
+                                  <th>3</th>
+                                  <th>4</th>
+                                  <th>5</th>
+                                 </tr>
+                                 <tr>                                         
+                                  <td>Forecast &deg;F:</td>
                                   <td><p id="forecastday1">Day 1</p></td>
                                   <td><p id="forecastday2">Day 2</p></td>
                                   <td><p id="forecastday3">Day 3</p></td>
                                   <td><p id="forecastday4">Day 4</p></td>
                                   <td><p id="forecastday5">Day 5</p></td>
-                                </grid>
-                              </tbody>
-                            </table>
+                                </tr>
+                              </table>
                           </div>
             
         <section class="franklin">
          <p>
            <h1>Franklin Founders Day Fresco</h1>
-           This fall after reflection upon last years's event held in the overflowing Foundation park, <br>I realized that I have been taking
-           the festival for granted all these years <br>and have not been properly engaging in perhaps the most popular community event of <br>the year.  In response, I contacted Ms. Sharon via email and expressed my desire to <br>serve on the committee.  Well, the phone rings immediately and she promptly asked me to <br>be the chair of said event, quite the turnaround.  My appreciation for the years of <br>dedicated, generous service of volunteers and sponsors has excalated beyond <br>what I thought I could feel for such a thing and ... 
+           This fall after reflection upon last years's event held in the overflowing Foundation park, I realized that I have been taking
+           the festival for granted all these years and have not been properly engaging in perhaps the most popular community event of the year. 
+           In response, I contacted Ms. Sharon via email and expressed my desire to serve on the committee.  
+           Well, the phone rings immediately and she promptly asked me to be the chair of said event, quite the turnaround.  
+           My appreciation for the years of dedicated, generous service of volunteers and sponsors has excalated beyond what I thought I could feel for such a thing and ... 
          </p> 
         </section>
 
@@ -97,7 +109,7 @@
          </aside>
         
          <section background="image3">  
-            <img src= "/assignments/lesson-5/images/jumping.jpg" alt="jumping" style="width:50%;"> 
+            <img src= "/assignments/lesson-5/images/jumping.jpg" alt="jumping"> 
          </section>   
         <article>
           <br>
@@ -113,8 +125,8 @@
         
         <footer>
                 &copy;2018 || William Burton || Location: California ||   
-                <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning ||</a>
-                <a id="date"></a>
+                <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning </a>
+                || <a id="date"></a>
         </footer>
         <script>
           var d = new Date();
