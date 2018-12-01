@@ -78,6 +78,10 @@ li a:hover {
   background-color:green;
   
 }
+li.active a {background: linear-gradient(green 0%,orange 100%);
+}
+
+
 h6 { text-align: center;
   position: -webkit-sticky;
   position: sticky;
