@@ -6,11 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link rel="stylesheet" href= "styles/normalize.css">
-        <link rel="stylesheet" href= "/assignments/lesson-8/styles/style81.css">
+        <link rel="stylesheet" href="/assignments/lesson-11/style/townpages.css">
+        
+
   </head> 
   
   <body>    
-        
+        <header>
+                <img src="/assignments/lesson-4/images/weather-icon-png-5.png" alt="weather icon" style="width:100px;height:100px;">
+                    <div class="headertext">
+                    <h1>Storm Center</h1>
+                    <div class="subheading">Where The Weather Changes Every 30 Minutes!</div>
+                </div>
+                <div class="currentconditions">
+                     <img src="/assignments/lesson-4/images/logo.png" alt="logo" style="width:75px;height:75px;">
+                     <span id="description1"></span>
+                     </div>
+    
+            </header> 
         
   <main>    
                 
@@ -23,13 +36,10 @@
                   <li><a href="/assignments/lesson-11/html/gallery-7.html">Gallery</a></li>
                  </ul>
 
-
-
-
-         <img name="test" src= "/assignments/lesson-7/images/weatherstorm.jpg" alt="background image" >                  
+         <img name="storm" src= "/assignments/lesson-7/images/weatherstorm.jpg" alt="background image" style="width:100%" >                  
         <div class="test">
          <form name="htmlform" method="post" action="html_form_send.php">
-        <h1>Storm Center</h1>
+        
                 <table width="500px">
                 
                 <tr>
@@ -103,12 +113,23 @@
                                         
                                  <tr>
                                         <td valign="top">
-                                        <label for="storm_severity">Storm Severity</label>
+                                        <label class="rest">Storm Severity</label>
+                                        <td>
+                                            
+                                            <input type="radio" id="1" name="sv" value="1" checked>1<br>
+                                            <input type="radio" id="2" name="sv" value="2" unchecked>2<br>
+                                            <input type="radio" id="3" name="sv" value="3" unchecked>3<br>
+                                            <input type="radio" id="4" name="sv" value="4" unchecked>4<br>
+                                            <input type="radio" id="5" name="sv" value="5" unchecked>5<br>
+                                                                          
+                                                           
+                                                          
+                                                                                                                                                  
                                         </td>
-                                        <td valign="top">
-                                        <input  type="range (1-5)" name="storm_severity" range="1-5">
-                                        </td>
-                                        </tr>  
+                                        
+                                                           
+                                                                           
+                                         
                                         <tr>       
                                                 <td valign="top">
                                                         <label for="storm_loc">Storm Location</label>
@@ -132,10 +153,10 @@
                                                         <label for="storm_loc">Is the Storm DANGEROUS</label>   
                                                        </td>
                                                        <td>
-                                                        <input type="radio" name="s" value="Yes"> YES<br>
-                                                                <input type="radio" name="m" value="Maybe"> Maybe<br>
-                                                                <input type="radio" name="n" value="No"> No<br>  
-                                                                </td>                                                                         
+                                                                <input type="radio" id="r1" name="sd" value="Yes" unchecked> YES<br>
+                                                                <input type="radio" id="r2" name="sd" value="Maybe" unchecked> Maybe<br>
+                                                                <input type="radio" id="r3" name="sd" value="No" checked> No<br>  
+                                                         </td>                                                                         
                             
                         </tr> 
                 
@@ -152,7 +173,7 @@
                 </tr>
                 <tr>
                  <td colspan="2" style="text-align:center">
-         ( <a href="thanks.html"> Record</a> )
+         ( <a href="/assignments/lesson-11/html/thanks.html"> Record</a> )
                 
                 </td>
                 </tr>
@@ -170,14 +191,21 @@
   
   
     <footer>
+            
                 &copy;2018 || William Burton || Location: California ||   
                 <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning</a>
+                || <a id="date"></a>
+                <script>
+                        var d = new Date();
+                        document.getElementById("date").innerHTML = d;
+                        </script>
         </footer>
         
     
         
   </main>
   </body>
+
   <script>
         var urlString = document.location.href;
         var urlArray = urlString.split('/');
