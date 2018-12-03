@@ -12,34 +12,41 @@ main{
 
 
 header {
-  background-color: black;
+  background-color:black;
   position: fixed;
   top: 0px;
   text-align: center;
-  height: 150px;
+  height: 148px;
   width: 100%;
   z-index: +10;
-  
-}
-
-header.img {
-width: 0px;
-padding-right: 0px;
-padding-bottom: 0px;
+  color: white;
  
+}
+
+header > img {
+ 
+width: 100px;
+padding-right: 80px;
+padding-bottom: 10px;
+height: auto;
 
 }
+
 
 .headertext {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   color: white;
   display: inline-block;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px black; 
 }     
 
 .headertext h1 {
   position: relative; 
   font-size: 50px;
+  color: white;
+ 
 }
 .currentconditions {
   display: inline-block;

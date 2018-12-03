@@ -9,6 +9,7 @@ let weatherRequest = new XMLHttpRequest();
    console.log(weatherData);
    document.getElementById("current_temp").innerHTML = weatherData.main.temp;
    document.getElementById("description").innerHTML = weatherData.weather[0].description;
+   document.getElementById("description1").innerHTML = weatherData.weather[0].description;
    document.getElementById("humidity").innerHTML = weatherData.main.humidity;
    document.getElementById("wind_spd").innerHTML = weatherData.wind.speed;
    document.getElementById("wind_dir").innerHTML = weatherData.wind.deg;
