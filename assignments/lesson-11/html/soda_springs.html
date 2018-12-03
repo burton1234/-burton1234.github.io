@@ -4,9 +4,10 @@
         <title>Soda Springs</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1.0">
         <link rel="stylesheet" href= "styles/normalize.css">
         <link rel="stylesheet" href= "/assignments/lesson-11/style/townpages.css">
+        <link rel="stylesheet" href= "/assignments/lesson-11/style/townpagesmall.css">
         <script src="/assignments/lesson-11/script/sodasprings.js"></script>
         <script src="/assignments/lesson-11/script/sodaspringforecast.js"></script>
 
@@ -56,15 +57,16 @@
                 <p class="label">WIND DIRECTION:</p>
                 <p><span id="wind_dir"></span> &deg;</p>
                 <p class="label">WIND CHILL:</p>
-                <p><span id="wind chill"></span> &deg;</p>
+                <p><span id="wind_chill"></span> &deg;F</p>
                 
                  </div>
                  <script>
                   var temp= parseFloat(document.getElementById('current_temp').value);
                   var wind= parseFloat(document.getElementById('wind_spd').value);
                   var result= 35.74 + 0.6215 * temp -35.75 * Math.pow(wind,0.16)+ 0.4275 * temp * Math.pow(wind,0.16);
-                  document.getElementById('wind chill').innerHTML = result.toFixed(2);
+                  document.getElementById('wind_chill').innerHTML = result.toFixed(2);
                   </script>
+                  
         </div>
         </main>    
             <figure>

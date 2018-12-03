@@ -39,7 +39,7 @@
           <li><a href="/assignments/lesson-11/html/stormcenter.html">Storm Center</a></li>
           <li><a href="/assignments/lesson-11/html/gallery-7.html">Gallery</a></li>
          </ul>
-         <h6> The Town of Fish Haven </h6>  
+         <h6>FISH HAVEN </h6>  
         
          
     <div class="weathersummary">
@@ -56,14 +56,16 @@
         <p class="label">WIND DIRECTION:</p>
         <p><span id="wind_dir"></span> &deg;</p>
         <p class="label">WIND CHILL:</p>
-        <p><span id="wind chill"></span> &deg;</p>
+        <p><span id="wind_chill"></span> &deg;F</p>
+        
           </div>
           <script>
-          var temp= parseFloat(document.getElementById('current_temp').value);
-          var wind= parseFloat(document.getElementById('wind_spd').value);
-          var result= 35.74 + 0.6215 * temp -35.75 * Math.pow(wind,0.16)+ 0.4275 * temp * Math.pow(wind,0.16);
-          document.getElementById('wind chill').innerHTML = result.toFixed(2);
-          </script>
+                  var temp= parseFloat(document.getElementById('current_temp').value);
+                  var wind= parseFloat(document.getElementById('wind_spd').value);
+                  var result= 35.74 + 0.6215 * temp -35.75 * Math.pow(wind,0.16)+ 0.4275 * temp * Math.pow(wind,0.16);
+                  document.getElementById('wind_chill').innerHTML = result.toFixed(2);
+                  
+     </script>
         </div>
         </main>    
             <figure>
@@ -125,8 +127,8 @@
         
         <footer>
                 &copy;2018 || William Burton || Location: California ||   
-                <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning ||</a>
-                <a id="date"></a>
+                <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning </a>
+               || <a id="date"></a>
         </footer>
         <script>
           var d = new Date();
