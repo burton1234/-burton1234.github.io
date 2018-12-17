@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
 
@@ -3941,8 +3940,6 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
-			width: 7rem;
 		}
 
 			#menu .close:before {
