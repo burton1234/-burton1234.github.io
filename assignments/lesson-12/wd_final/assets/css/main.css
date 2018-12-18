@@ -10,9 +10,9 @@
     }
 
 #header > .logo span {
-    font-weight: 400;
+    font-weight: 0;
     font-size: .95em;
-    color: rgba(255, 255, 255, 0.65);
+    color: black;
 }
 
 body {
@@ -61,3 +61,4 @@ img{
   .dropdown:hover .dropdown-content {
     display: -webkit-box;
   }
+ 
