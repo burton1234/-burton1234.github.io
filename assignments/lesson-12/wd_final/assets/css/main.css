@@ -61,4 +61,73 @@ img{
   .dropdown:hover .dropdown-content {
     display: -webkit-box;
   }
- 
+  .copyright{
+      background: orange;
+      font: white;
+  }
+  table {
+    position: fixed;
+   bottom: 3em;
+   left: 2em;
+   opacity: .75;
+    padding-bottom: 1px;   
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    width: 500px;
+    box-shadow: 10px 10px 10px black;
+    z-index: 0
+    }
+    label {
+        color: white;
+    }
+
+    td {
+    text-align: center;
+    border: 1px solid #d9d4d9;
+    
+    }
+    
+    thead tr:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: blue;
+    height: 45px;
+    }
+    
+    thead tr:nth-child(2) {
+    font-weight: bold;
+    background-color:blue;
+    color: white;
+    }
+    
+    table, td, th {
+    border: 1px solid black;
+    }
+    
+    tr {
+    height: 33px;
+    }
+    
+    tbody tr:nth-child(even) {
+    background-color:rgb(67, 124, 179);
+    
+    }
+    
+    tbody tr:nth-child(odd) {
+    background-color:rgb(67, 124, 179);
+    }
+    
+    tfoot {
+    font-size: .75rem;
+    background-color:white;
+    text-align: center;
+    }
+    
+    tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+    }
+    
+    tbody tr:nth-child(4) td:nth-child(3) {
+    background-color:blue;
+    color: white;
+    }

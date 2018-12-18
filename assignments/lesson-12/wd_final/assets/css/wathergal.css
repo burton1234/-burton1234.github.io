@@ -1,0 +1,90 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    height: 100%;
+    
+}
+header {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    z-index: +10;
+    color:white;
+
+}
+ul {
+    list-style-type: inline block;
+    position: fixed;
+    top: 175px;
+    margin: 0%;
+    
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    z-index: +4;
+}
+
+li {
+    display: inline-block;
+    
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+     
+}
+
+li a:hover {
+    background-color:green;
+}
+li.active a {background: linear-gradient(green 0%,orange 100%);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: center;
+    background-color: black;
+    height: auto;
+    z-index: +6;
+    width: 100%;
+    position: fixed;
+    top: 40px;
+
+}
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 3%;
+    grid-gap: 10px;
+    margin-top: 20%;
+    margin-bottom: 100px;
+  }
+  
+
+img{
+height: 350px; 
+    width: 350px;
+}
+
+     
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 25px;
+    height: 40px;
+    width: 100%;
+    background-color:black;
+    color: white; 
+    text-align: center; 
+    z-index: +4;
+}
+  
+  
