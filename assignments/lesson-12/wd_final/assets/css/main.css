@@ -22,7 +22,7 @@ body {
 }
 section {
   grid-gap: 10px;
-  background-image: linear-gradient(to right, white ,blue);
+  background-image: linear-gradient(to right, white ,rgb(100, 100, 177));
   
   padding: 10px;
 }
@@ -47,49 +47,63 @@ img{
     width: 50%;
     height: auto;
     box-shadow: 10px 10px 10px black;
-    
+    margin-top: 5em;
 
 }
 #header {
     
-    background-image: linear-gradient(to right, white , black);
+    background-image: linear-gradient(to right, white ,rgb(100, 100, 177));
 
 
 
 }
 header > div{
     font-family:'Poppins', sans-serif;
+
 }
+
+
 header > div > img {
-    width:7em;
-    box-shadow: 5px 5px 5px black;
+    width:5em;
+    box-shadow: 0px 0px 0px black;
+    margin-top: 0em;
+}
+nav{
+    background-image: linear-gradient(to left, white ,rgb(100, 100, 177));
+
+}
+nav > div > span{
+    color:white;
 }
 #dropdown {
-    position: relative;
+    position: fixed;
     display: inline-block;
+    
     
   }
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
     padding: 12px 16px;
     z-index: 1;
   }
   .dropdown:hover .dropdown-content {
     display: -webkit-box;
+    
   }
   .copyright{
       background: orange;
       font: white;
   }
   table {
-    position: fixed;
-   bottom: 3em;
-   left: 2em;
-   opacity: .75;
+    position: absolute;
+   bottom: 1em;
+   left: 4em;
+   opacity: .85;
     padding-bottom: 1px;   
     border: 1px solid lightgrey;
     border-collapse: collapse;
