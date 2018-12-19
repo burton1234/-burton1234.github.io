@@ -16,13 +16,14 @@
 }
 
 body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100%;
     
 }
 section {
   grid-gap: 10px;
-  background-color: cornsilk;
+  background-image: linear-gradient(to right, white ,blue);
+  
   padding: 10px;
 }
 
@@ -40,9 +41,28 @@ li  {
     background:white;
     font-display: white;
 }
+
+
 img{
     width: 50%;
     height: auto;
+    box-shadow: 10px 10px 10px black;
+    
+
+}
+#header {
+    
+    background-image: linear-gradient(to right, white , black);
+
+
+
+}
+header > div{
+    font-family:'Poppins', sans-serif;
+}
+header > div > img {
+    width:7em;
+    box-shadow: 5px 5px 5px black;
 }
 #dropdown {
     position: relative;
@@ -130,4 +150,7 @@ img{
     tbody tr:nth-child(4) td:nth-child(3) {
     background-color:blue;
     color: white;
+    }
+    #footer > .container > .icons > li{
+        background-color:blue;
     }
