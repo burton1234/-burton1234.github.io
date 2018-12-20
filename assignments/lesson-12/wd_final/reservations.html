@@ -75,25 +75,25 @@
                 <label for="address"> City, State  *</label>
                 </td>
                 <td valign="left">
-                <input  type="text" name="address" maxlength="50" size="30">
+                <input  type="text" name="address" maxlength="30" size="30">
                 </td>
                 </tr> 
                 <tr>
                 <td valign="left">
                 <label for="zipcode">Zip Code</label>
-                                                </td>
-                                                <td valign="left">
-                                                <input  type="number" name="zipcode" maxlength="30" size="30" placeholder="XXXXX-XXXX">
-                                                </td>
-                                                </tr>        
-                                                <tr>
-                                                <td valign="left">
-                                                <label for="Country">Contry *</label>
-                                                </td>
-                                                <td valign="left">
-                                                <input  type="number" name="zipcode" maxlength="30" size="30" placeholder="USA">
-                                                </td>
-                                                </tr>   
+                </td>
+                <td valign="left">
+                <input  type="number" name="zipcode" maxlength="11" size="11" placeholder="XXXXX-XXXX">
+                 </td>
+                 </tr>        
+                 <tr>
+                 <td valign="left">
+                 <label for="Country">Contry *</label>
+                 </td>
+                 <td valign="left">
+                <input  type="text" name="contry" maxlength="25" size="15" placeholder="USA">
+                 </td>
+                 </tr>   
                                                    
                 <tr>
                  <td valign="left">
@@ -141,17 +141,16 @@
                                 <label for="storm_loc">Room Type</label>
                                 </td>
                                         <td valign="left">
-                                        <select id="storm_loc">
-                                        <option value="Franklin"> King w/ Kitchen
+                                        <select id="">
+                                        <option value="" selected> King w/ Kitchen
                                         </option>
-                                        <option value="Greenville"> Double Queens w/ Kitchen
+                                        <option value=""> Double Queens w/ Kitchen
                                        </option>
-                                       <option value="Springfield"> King
+                                       <option value=""> King
                                        </option>
-                                       <option value="Springfield"> Double Queens
+                                       <option value=""> Double Queens
                                        </option>
-                                       <option value="Select Region" selected> King w/ Kitchen
-                                       </option>
+                                       
                                        </select>
                                 <tr>                   
                                 <td valign="left">
@@ -180,12 +179,12 @@
                              <tr>          
                                 <td valign="left">
                                                                
-                                                        <label for="storm_loc">Special Accomidations</label>   
+                                                        <label for="storm_loc">Special Accommodation</label>   
                                                        </td>
                                                        <td>
-                                                                <input type="radio" id="r1" name="sd" value="Yes" unchecked> Bottom Floor Wheel Chair Accessable<br>
-                                                                <input type="radio" id="r2" name="sd" value="Maybe" unchecked> Room Service<br>
-                                                                <input type="radio" id="r3" name="sd" value="No" unchecked> Gym<br>  
+                                                                <input type="radio" id="r1" name="sd" value="" checked> Bottom Floor<br>
+                                                                <input type="radio" id="r2" name="sd" value="" checked> Room Service<br>
+                                                                <input type="radio" id="r3" name="sd" value="" unchecked> Gym<br>  
                                                          </td>                                                                         
                             
                         </tr> 
@@ -201,7 +200,7 @@
                 </tr>
                 <tr>
                  <td colspan="2" style="text-align:center">
-         ( <a href="/assignments/lesson-11/html/thanks.html"> CONFIRM RESERVATION</a> )
+         ( <a href="/wd_final/confirm.html"> CONFIRM RESERVATION</a> )
                 </td>
               </tr> 
               </td>
@@ -220,7 +219,7 @@
   
   
   
-    <footer>
+  <footer id="footer">
             
                 &copy;2018 || William Burton || Location: California ||   
                 <a href="http://www.byui.edu/online"> BYU-Idaho Online Learning</a>
