@@ -22,7 +22,7 @@ body {
 }
 section {
   grid-gap: 10px;
-  background-image: linear-gradient(to right, white ,rgb(100, 100, 177));
+  background-image: linear-gradient(to right, white ,rgb(67, 124, 179));
   
   padding: 10px;
 }
@@ -50,7 +50,7 @@ img{
 }
 #header {
     
-    background-image: linear-gradient(to right, white ,rgb(100, 100, 177));
+    background-image: linear-gradient(to right, white ,rgb(67, 124, 179));
 
 
 
@@ -68,7 +68,7 @@ header > div > img {
 }
 nav{
     position: relative;
-    background-image: linear-gradient(to left, white ,rgb(100, 100, 177));
+    background-image: linear-gradient(to left, white ,rgb(67, 124, 179));
 
 }
 nav > div > span{
