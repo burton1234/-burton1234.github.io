@@ -5,12 +5,40 @@
         <meta http-equiv="x-ua-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <link rel="stylesheet" href= "/assignments/lesson-12/wd_final/assets/css/main.css">
+        <link rel="stylesheet" href= "/assignments/lesson-12/wd_final/assets/css/normalize.css">
   </head> 
   
  <body>        
  <header>
-  
+  <header id="header" class="alt">
+    <div>
+    <img src="/assignments/lesson-12/wd_final/images/temples/d639dac43dae26ef46dc8c5f0e26173a.png" alt="moroni" /> 
+    </div>
+    <div class="logo"><a href="index.html"><b>The TEMPLE Inn <span>& SUITES</span></b></a>
+    <br>Sleep in Tune Wake in Harmony
+    </div>
+  </header>
  </header>               
+ <nav>			
+  <div class="dropdown">
+  <span>MENU:</span>
+  <div class="dropdown-content">
+  <ul class="links">
+      <li><a href="/assignments/lesson-12/wd_final/index.html">HOME</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/sd.html">SAN DIEGO TEMPLE</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/nauvoo.html">NAUVOO TEMPLE</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/rexburg.html">REXBURG TEMPLE</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/palmyra.html">PALMYRA TEMPLE</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/reservations.html">RESERVATIONS</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/service.html">SERVICES</a></li>
+      <li><a href="/assignments/lesson-12/wd_final/contact.html">CONTACT</a></li>
+      </ul>
+      </div>		
+       </div>
+  </nav>
+
+ 
+ 
  <section>               
  
                
@@ -34,7 +62,7 @@ function populateHeader(jsonObj) {
             myH1.textContent = jsonObj['pagename'];
             header.appendChild(myH1);
           
-            var myPara = document.createElement('p');
+            var myPara = document.createElement('h2');
             myPara.textContent = '2019 Temple Closure Schedule: '
             header.appendChild(myPara);
           }
